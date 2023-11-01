@@ -16330,7 +16330,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
 
 var apiClient = axios__WEBPACK_IMPORTED_MODULE_0__["default"].create({
-  baseURL: 'http://localhost:80/api',
+  baseURL: 'https://laravel-qo50.frb.io/api',
   timeout: 1000,
   headers: {
     'Content-Type': 'application/json'
