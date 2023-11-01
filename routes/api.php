@@ -25,7 +25,7 @@ Route::patch('/news', [NewsController::class, 'updateStatus']);
  * Try to avoid something like that.
  */
 Route::post('/news/generate', function () {
-    Artisan::call('db:seed', ['--class' => 'NewsSeeder']);
+    Artisan::call('db:seed', ['--class' => 'NewsSeeder', '--force' => true]);
 
     return new JsonResponse([], Response::HTTP_CREATED);
 });
